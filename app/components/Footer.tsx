@@ -1,8 +1,8 @@
 "use client"
 
-import { Grid, IconButton, Typography, styled } from "@mui/material";
+import { Grid, IconButton, Typography, styled } from "@mui/material"
 import React from "react"
-import { blue300, fontSizeSub2, fontSizeSub3, fontSizeh5, fontWeighth4Bold, white } from "../styles/theme";
+import { blue300, fontSizeSub2, fontSizeSub3, white } from "../styles/theme"
 
 const FooterContainer = styled('div')({
   backgroundColor: `${blue300}`,
@@ -11,7 +11,7 @@ const FooterContainer = styled('div')({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-});
+})
 
 const CompanyText = styled(Typography)({
   fontSize: `${fontSizeSub2}`,
@@ -22,7 +22,7 @@ const CompanyText = styled(Typography)({
 const CopyRightText = styled(Typography)({
   fontSize: `${fontSizeSub3}`,
   color: `${white}`,
-});
+})
 
 
 const Footer: React.FC = () => {
