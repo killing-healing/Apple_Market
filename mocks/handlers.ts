@@ -1,5 +1,5 @@
 import { rest } from "msw";
-// example
+
 export const handlers = [
   rest.post("/register", (_req, res, ctx) => {
     return res(
@@ -14,6 +14,7 @@ export const handlers = [
       })
     );
   }),
+
   rest.post("/login", async (_req, res, ctx) => {
     return res(
       ctx.status(200),
@@ -27,6 +28,7 @@ export const handlers = [
       })
     );
   }),
+
   rest.get("/logout", (_req, res, ctx) => {
     return res(
       ctx.status(200),
@@ -38,6 +40,7 @@ export const handlers = [
       })
     );
   }),
+
   rest.post("/rooms", (_req, res, ctx) => {
     return res(
       ctx.status(200),
@@ -56,6 +59,7 @@ export const handlers = [
       })
     );
   }),
+
   rest.post("/rooms/:roomId/join", (_req, res, ctx) => {
     return res(
       ctx.status(200),
@@ -69,6 +73,7 @@ export const handlers = [
       })
     );
   }),
+  
   rest.get("/rooms", (_req, res, ctx) => {
     return res(
       ctx.status(200),
