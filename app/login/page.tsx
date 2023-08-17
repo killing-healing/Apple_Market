@@ -53,7 +53,7 @@ const SignUpText = styled(Typography)({
 const login = () => {
   
   return (
-    <LoginContainer container direction="column" spacing={3}>
+    <LoginContainer container direction="column">
       <LoginFormContainer>
         <Grid item>
           <StyledTextField
@@ -77,7 +77,7 @@ const login = () => {
             LOGIN
           </LoginButton>
           <SignUpText>
-            <Link href="/signup">Do you need to sign up?</Link>
+            <Link href="/signUp">Do you need to sign up?</Link>
           </SignUpText>
         </Grid>
       </LoginFormContainer>
