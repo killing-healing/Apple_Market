@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Grid, TextField, Typography, styled } from "@mui/material"
+import { Button, FormControl, FormControlLabel, Grid, Radio, RadioGroup, TextField, Typography, styled } from "@mui/material"
 import { badgeBorderRadius, blue400, fontSizeSub2, fontSizeSub3, shadow } from "../styles/theme"
 import Link from "next/link"
 
@@ -17,7 +17,7 @@ const SignUpFormContainer = styled('div')({
   justifyContent: 'center',
   alignItems: 'center',
   width: '400px',
-  height: '400px',
+  height: '450px',
   padding: '50px 50px',
   margin: '50px 0px',
   borderRadius: `${badgeBorderRadius}`,
@@ -110,6 +110,12 @@ const signUp = () => {
             <CheckButton variant="outlined">Check</CheckButton>
           </Grid>
         </GridContainer>
+        <FormControl style={{ marginBottom: '15px' }}>
+          <RadioGroup row aria-label="gender" name="genderChoice">
+            <FormControlLabel value="female" control={<Radio />} label={<Typography variant="body2">여성</Typography>} />
+            <FormControlLabel value="male" control={<Radio />} label={<Typography variant="body2">남성</Typography>} />
+          </RadioGroup>
+        </FormControl>
         <Grid item>
           <SignUpButton variant="contained" color="primary">
             Sign Up
