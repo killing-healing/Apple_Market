@@ -50,7 +50,7 @@ const SignUpText = styled(Typography)({
   }
 })
 
-const login = () => {
+const Login = () => {
   
   return (
     <LoginContainer container direction="column">
@@ -85,4 +85,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login

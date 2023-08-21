@@ -5,6 +5,7 @@ import React from "react"
 import { black200, black500, shadow, white } from "../styles/theme"
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 import SearchSharpIcon from '@mui/icons-material/SearchSharp'
+import Link from "next/link"
 
 const HeaderContainer = styled(Grid)({
   display: 'flex',
@@ -36,7 +37,12 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer container justifyContent="space-between">
       <Grid item>
-        <img src="./logo.png" alt="logo" style={{ cursor: 'pointer', position: 'relative', top: '3px' }} />
+        <Link href='/main'>
+          <img 
+            src="./logo.png"
+            alt="logo" 
+            style={{ cursor: 'pointer', position: 'relative', top: '3px' }} />
+        </Link>
       </Grid>
       <Grid item>
         <SearchField
