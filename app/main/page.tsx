@@ -4,33 +4,6 @@ import { Card, CardContent, CardMedia, Grid, Typography, styled } from "@mui/mat
 import { PostCardProps } from "../interface/interface";
 import { badgeBorderRadius, shadow } from "../styles/theme";
 
-const MainContainer = styled(Grid) ({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  minHeight: '500px',
-  width: '100vw',
-  padding: '100px 50px'
-})
-
-const PostCardContainer = styled(Card) ({
-  width: '350px',
-  height: '380px',
-  borderRadius: `${badgeBorderRadius}`,
-  boxShadow: `${shadow}`
-})
-
-const StyledCardContent = styled(CardContent) ({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'flex-start',
-})
-
-const StyledTypography = styled(Typography) ({
-  marginBottom: '10px'
-})
-
 const Main = () => {
 
   const posts = [
@@ -75,5 +48,33 @@ const PostCard: React.FC<PostCardProps> = ({ image, productName, location, price
     </StyledCardContent>
   </PostCardContainer>
 )
+
+const MainContainer = styled(Grid) ({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  minHeight: '500px',
+  width: '100vw',
+  padding: '100px 50px'
+})
+
+const PostCardContainer = styled(Card) ({
+  width: '350px',
+  height: '380px',
+  borderRadius: `${badgeBorderRadius}`,
+  boxShadow: `${shadow}`
+})
+
+const StyledCardContent = styled(CardContent) ({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'flex-start',
+})
+
+const StyledTypography = styled(Typography) ({
+  marginBottom: '10px'
+})
+
 
 export default Main

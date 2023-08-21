@@ -7,32 +7,6 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import SearchSharpIcon from '@mui/icons-material/SearchSharp'
 import Link from "next/link"
 
-const HeaderContainer = styled(Grid)({
-  display: 'flex',
-  padding: '10px 50px',
-  alignItems: 'center',
-  boxShadow: `${shadow}`,
-  backgroundColor: `${white}`,
-})
-
-const SearchField = styled(TextField)({
-  width: '500px',
-  height: '40px',
-  '.MuiOutlinedInput-root': {
-    borderRadius: '15px',
-  },
-  '.MuiInputBase-input': {
-    padding: '10px 20px',
-  }
-})
-
-const MyPageButton = styled(Button)({
-  textTransform: 'none',
-  padding: '10px 0px 10px 12px',
-  borderRadius: '15px',
-  color: `${black500}`,
-})
-
 const Header: React.FC = () => {
   return (
     <HeaderContainer container justifyContent="space-between">
@@ -62,5 +36,33 @@ const Header: React.FC = () => {
     </HeaderContainer>
   )
 }
+
+const HeaderContainer = styled(Grid)({
+  display: 'flex',
+  padding: '10px 50px',
+  alignItems: 'center',
+  boxShadow: `${shadow}`,
+  backgroundColor: `${white}`,
+})
+
+const SearchField = styled(TextField)({
+  width: '400px',
+  height: '40px',
+  position: 'relative',
+  left: '-57px',
+  '.MuiOutlinedInput-root': {
+    borderRadius: '15px',
+  },
+  '.MuiInputBase-input': {
+    padding: '10px 20px',
+  }
+})
+
+const MyPageButton = styled(Button)({
+  textTransform: 'none',
+  padding: '10px 0px 10px 12px',
+  borderRadius: '15px',
+  color: `${black500}`,
+})
 
 export default Header
