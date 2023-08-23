@@ -4,65 +4,6 @@ import { Button, FormControl, FormControlLabel, Grid, Radio, RadioGroup, TextFie
 import { badgeBorderRadius, blue400, fontSizeSub2, fontSizeSub3, shadow } from "../styles/theme"
 import Link from "next/link"
 
-const SignUpContainer = styled(Grid)({
-  height: '100vh',
-  flexDirection: 'row',
-  justifyContent: 'center',
-  alignItems: 'center',
-})
-
-const SignUpFormContainer = styled('div')({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '400px',
-  height: '450px',
-  padding: '50px 50px',
-  margin: '50px 0px',
-  borderRadius: `${badgeBorderRadius}`,
-  boxShadow: `${shadow}`
-})
-
-const GridContainer = styled(Grid) ({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'flex-start'
-})
-
-const CheckButton = styled(Button)({
-  height: '55px',
-  marginLeft: '10px',
-  borderRadius: '8px',
-  fontSize: `${fontSizeSub3}`
-});
-
-const StyledTextField = styled(TextField)({
-  width: '300px',
-  marginBottom: '20px',
-  '& .MuiOutlinedInput-root': {
-    borderRadius: '8px',
-  }
-})
-
-const SignUpButton = styled(Button)({
-  width: '300px',
-  borderRadius: '8px',
-  textTransform: 'none',
-  fontSize: '16px',
-  fontWeight: 'bold',
-})
-
-const LoginText = styled(Typography)({
-  marginTop: '20px',
-  textAlign: 'center',
-  margin: '30px 0px',
-  fontSize: `${fontSizeSub2}`,
-  '& a': {
-    color: `${blue400}`
-  }
-})
-
 const signUp = () => {
   return (
     <SignUpContainer container direction="column">
@@ -128,5 +69,64 @@ const signUp = () => {
     </SignUpContainer>
   )
 }
+
+const SignUpContainer = styled(Grid)({
+  height: '100vh',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+})
+
+const SignUpFormContainer = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '400px',
+  height: '450px',
+  padding: '50px 50px',
+  margin: '50px 0px',
+  borderRadius: `${badgeBorderRadius}`,
+  boxShadow: `${shadow}`
+})
+
+const GridContainer = styled(Grid) ({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'flex-start'
+})
+
+const CheckButton = styled(Button)({
+  height: '55px',
+  marginLeft: '10px',
+  borderRadius: '8px',
+  fontSize: `${fontSizeSub3}`
+});
+
+const StyledTextField = styled(TextField)({
+  width: '300px',
+  marginBottom: '20px',
+  '& .MuiOutlinedInput-root': {
+    borderRadius: '8px',
+  }
+})
+
+const SignUpButton = styled(Button)({
+  width: '300px',
+  borderRadius: '8px',
+  textTransform: 'none',
+  fontSize: '16px',
+  fontWeight: 'bold',
+})
+
+const LoginText = styled(Typography)({
+  marginTop: '20px',
+  textAlign: 'center',
+  margin: '30px 0px',
+  fontSize: `${fontSizeSub2}`,
+  '& a': {
+    color: `${blue400}`
+  }
+})
 
 export default signUp

@@ -4,27 +4,6 @@ import { Grid, IconButton, Typography, styled } from "@mui/material"
 import React from "react"
 import { blue300, fontSizeSub2, fontSizeSub3, white } from "../styles/theme"
 
-const FooterContainer = styled('div')({
-  backgroundColor: `${blue300}`,
-  height: '150px',
-  padding: '30px 50px',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-})
-
-const CompanyText = styled(Typography)({
-  fontSize: `${fontSizeSub2}`,
-  color: `${white}`,
-  marginTop: '10px'
-})
-
-const CopyRightText = styled(Typography)({
-  fontSize: `${fontSizeSub3}`,
-  color: `${white}`,
-})
-
-
 const Footer: React.FC = () => {
   
   return (
@@ -47,5 +26,25 @@ const Footer: React.FC = () => {
     </FooterContainer>
   )
 }
+
+const FooterContainer = styled('div')({
+  backgroundColor: `${blue300}`,
+  height: '150px',
+  padding: '30px 50px',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+})
+
+const CompanyText = styled(Typography)({
+  fontSize: `${fontSizeSub2}`,
+  color: `${white}`,
+  marginTop: '10px'
+})
+
+const CopyRightText = styled(Typography)({
+  fontSize: `${fontSizeSub3}`,
+  color: `${white}`,
+})
 
 export default Footer
